@@ -1,0 +1,19 @@
+---
+title: Home
+description: Welcome to MyProduct documentation. Find guides, API reference and integrations to get the most out of MyProduct.
+---
+
+import { Cards } from 'nextra/components'
+import { HomeHero } from '../app/components/HomeHero'
+import { DocCards } from '../app/components/DocCards'
+
+<HomeHero>Welcome to the Docs</HomeHero>
+
+Everything you need to build, integrate and use MyProduct.
+
+<DocCards cards={[
+  { title: 'Getting Started', href: '/getting-started', description: 'Install and run MyProduct in minutes' },
+  { title: 'User Guide', href: '/user-guide', description: 'Learn how to use MyProduct day to day' },
+  { title: 'API Reference', href: '/api', description: 'Explore endpoints, parameters and responses' },
+  { title: 'Integrations', href: '/integrations', description: 'Configure MyProduct for your clients' }
+]} />
