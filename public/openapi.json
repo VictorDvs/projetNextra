@@ -1,0 +1,20 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MyProduct API",
+    "version": "1.0.0",
+    "description": "API reference for MyProduct"
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "List all users",
+        "responses": {
+          "200": {
+            "description": "A list of users"
+          }
+        }
+      }
+    }
+  }
+}

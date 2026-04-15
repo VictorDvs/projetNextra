@@ -5,6 +5,7 @@ interface CardProps {
   title: string
   href: string
   description: string
+  cta: string
 }
 
 export function DocCards({ cards }: { cards: CardProps[] }) {
@@ -15,7 +16,7 @@ export function DocCards({ cards }: { cards: CardProps[] }) {
       <p className={styles.title}>{card.title}</p>
       <p className={styles.description}>{card.description}</p>
       <Link href={card.href} className={styles.cta}>
-        View guide →
+        {card.cta}
       </Link>
     </div>
   ))}

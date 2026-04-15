@@ -1,3 +1,5 @@
 export default {
-  index: 'Introduction',
+  index: 'Create your first chapter',
+  connectingData: 'Connect your data',
+
 }

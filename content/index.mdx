@@ -1,19 +1,25 @@
 ---
 title: Home
-description: Welcome to MyProduct documentation. Find guides, API reference and integrations to get the most out of MyProduct.
+description: Welcome to Chappter documentation. Find sections to get the most out of Chappter.
 ---
 
 import { Cards } from 'nextra/components'
 import { HomeHero } from '../app/components/HomeHero'
 import { DocCards } from '../app/components/DocCards'
+import { BookOpen } from 'lucide-react'
+import Image from 'next/image'
 
-<HomeHero>Welcome to the Docs</HomeHero>
+<div className="flex justify-center items-center gap-5">
+  <BookOpen size={50} strokeWidth={1.5} />
+  <HomeHero>Welcome to the Docs</HomeHero>
+</div>
 
-Everything you need to build, integrate and use MyProduct.
+Everything you need to build, integrate and use Chappter.
 
 <DocCards cards={[
-  { title: 'Getting Started', href: '/getting-started', description: 'Install and run MyProduct in minutes' },
-  { title: 'User Guide', href: '/user-guide', description: 'Learn how to use MyProduct day to day' },
-  { title: 'API Reference', href: '/api', description: 'Explore endpoints, parameters and responses' },
-  { title: 'Integrations', href: '/integrations', description: 'Configure MyProduct for your clients' }
+  { title: 'Getting Started', href: '/getting-started', description: 'Install and run Chappter in minutes', cta: 'Open the chapter →'  },
+  { title: 'Core Concepts', href: '/core', description: 'Learn the fundamental ideas behind Chappter', cta: 'Explore the concepts →' },
+  { title: 'Features', href: '/features', description: 'Discover the powerful features of Chappter', cta: 'Discover features →' },
+  { title: 'Privacy Policy', href: '/privacy', description: 'Learn about our privacy practices', cta: 'Read the policy →' },
+  { title: 'API', href: '/reference', description: 'Explore endpoints, parameters and responses', cta: 'Browse the API →' },
 ]} />
